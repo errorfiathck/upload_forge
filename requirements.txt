@@ -1,0 +1,8 @@
+httpx
+PySide6
+aiofiles
+rich
+typer
+colorama
+jinja2
+reportlab
