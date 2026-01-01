@@ -37,7 +37,7 @@ Upload Forge is a powerful, production-grade security tool designed to detect an
 ### Graphical Interface (GUI)
 Launch the modern dashboard:
 ```bash
-python upload_forge.py gui
+python upload-forge.py gui
 ```
 ![Screen Shot](./Images/2.png)
 
@@ -45,7 +45,7 @@ python upload_forge.py gui
 Run a scan directly from your terminal:
 
 ```bash
-python upload_forge.py scan --url http://target.com/upload --param file --upload-dir http://target.com/uploads/
+python upload-forge.py scan --url http://target.com/upload --param file --upload-dir http://target.com/uploads/
 ```
 
 **Options:**
@@ -65,7 +65,7 @@ A vulnerable Flask application is included for testing purposes.
     ```
 2.  Run the scanner against it:
     ```bash
-    python upload_forge.py scan --url http://127.0.0.1:5000/upload --upload-dir http://127.0.0.1:5000/uploads/
+    python upload-forge.py scan --url http://127.0.0.1:5000/upload --upload-dir http://127.0.0.1:5000/uploads/
     ```
 
 ## ⚠️ Disclaimer
