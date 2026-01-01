@@ -39,6 +39,7 @@ Launch the modern dashboard:
 ```bash
 python upload_forge.py gui
 ```
+![Screen Shot](./Images/2.png)
 
 ### Command Line Interface (CLI)
 Run a scan directly from your terminal:
@@ -53,6 +54,7 @@ python upload_forge.py scan --url http://target.com/upload --param file --upload
 - `--upload-dir`: URL where uploaded files are stored (for verification).
 - `--proxies`: Proxy string (e.g., `http://127.0.0.1:8080`).
 
+![Screen Shot](./Images/4.png)
 ## 🧪 Testing
 
 A vulnerable Flask application is included for testing purposes.
@@ -63,7 +65,7 @@ A vulnerable Flask application is included for testing purposes.
     ```
 2.  Run the scanner against it:
     ```bash
-    python upload_forge.py scan --url http://127.0.0.1:5000/upload --upload-dir http://127.0.0.1:5000/uploads/
+    python main.py scan --url http://127.0.0.1:5000/upload --upload-dir http://127.0.0.1:5000/uploads/
     ```
 
 ## ⚠️ Disclaimer
