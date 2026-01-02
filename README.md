@@ -23,7 +23,7 @@ Upload Forge is a powerful, production-grade security tool designed to detect an
 
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/errorfiathck/upload-forge.git
+    git clone https://github.com/errorfiathck/upload_forge.git
     cd upload-forge
     ```
 
