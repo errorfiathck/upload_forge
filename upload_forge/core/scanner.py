@@ -28,13 +28,6 @@ class Scanner:
         start_time = datetime.now()
         engine = RequestEngine(proxies=proxies, headers=headers)
         
-        # Pass callback to logic or handle it via engine hooks?
-        # Simpler: Hook engine or make logic return logs.
-        # Let's make engine store history or emit it.
-        # For this turn, we'll attach the callback to the engine if we modify engine, 
-        # or just let logic return it.
-        # Let's modify logic to return logs or use a shared list.
-        
         # Better: Pass on_log_callback to logic -> engine
         engine.set_log_callback(on_log_callback)
         
