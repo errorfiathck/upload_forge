@@ -17,9 +17,6 @@ class BaseDetector(ABC):
 
 class UnrestrictedFileUploadDetector(BaseDetector):
     async def run(self, target_url: str, **kwargs) -> List[VulnerabilityFinding]:
-        # This is handled by the main scanner loop iterating payloads
-        # But we could have specific logic here for "plain upload"
         return []
 
-# We might keep the logic in Scanner for now to avoid over-engineering 
-# given the time constraints, but keeping the file for future extensibility.
+
