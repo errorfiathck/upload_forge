@@ -81,10 +81,6 @@ def scan(
         ) as progress:
             task = progress.add_task("[cyan]Scanning...", total=None)
             
-            # Monkey patch the scanner to update progress? 
-            # Or just run it. The scanner runs sequentially in current impl.
-            # Ideally we refactor scanner to report progress.
-            # For now, we just show an indeterminate spinner.
             result = await scanner.scan(
                 target_url=url,
                 file_param=param,
